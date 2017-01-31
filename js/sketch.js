@@ -16,7 +16,7 @@ var water;
 
 function preload(){
 
-  water = loadAnimation("../images/water-1.png","../images/water-4.png")
+  water = loadAnimation("../images/water/water-1.png","../images/water/water-60.png")
   dino = loadAnimation("../images/dino-1.png","../images/dino-4.png")
 
 }
@@ -49,12 +49,12 @@ function draw () {
   // image(waterSecond)
   // console.log(waterSecond);
   animation(water, windowWidth/2,windowHeight/1.2)
-  water.frameDelay = 60;
+  water.frameDelay = 3600;
+  water.changeFrame(second());
   animation(dino,windowWidth/2,windowHeight/1.2)
   dino.frameDelay = 3600;
 
-  water.changeFrame(second());
-  dino.changeFrame(second());
+  // dino.changeFrame(second());
 
 
   // fillToSecond = map(second(),0,60,0,height)
