@@ -16,9 +16,9 @@ var water;
 
 function preload(){
 
-  water = loadAnimation("../images/water/water-1.png","../images/water/water-60.png")
-  
-  dino = loadAnimation("../images/dino/dino_1.png","../images/dino/dino_60.png")
+  water = loadAnimation("images/water/water-1.png","images/water/water-60.png")
+
+  dino = loadAnimation("images/dino/dino_1.png","images/dino/dino_60.png")
 
 }
 
@@ -52,16 +52,11 @@ function draw () {
   animation(water, windowWidth/2,windowHeight/1.2)
   water.frameDelay = 3600;
   water.changeFrame(second());
-<<<<<<< HEAD
 
   animation(dino, windowWidth/2,windowHeight/1.2)
   dino.frameDelay = 6000;
 
   dino.changeFrame(minute());
-=======
-  animation(dino,windowWidth/2,windowHeight/1.2)
-  dino.frameDelay = 3600;
->>>>>>> 2c1b4689941af4b7ccdf9b1a4b22602335adb0ff
 
   // dino.changeFrame(second());
 
