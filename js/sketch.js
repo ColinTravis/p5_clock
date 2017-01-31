@@ -53,6 +53,9 @@ function draw () {
   animation(dino,windowWidth/2,windowHeight/1.2)
   dino.frameDelay = 3600;
 
+  water.changeFrame(second());
+  dino.changeFrame(second());
+
 
   // fillToSecond = map(second(),0,60,0,height)
   // fill(220,150,20)
